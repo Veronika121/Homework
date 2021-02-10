@@ -1,0 +1,13 @@
+2021-02-10 06:20:02 info: ----------------------------------------------
+2021-02-10 06:20:02 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-02-10 06:20:02 info: ----------------------------------------------
+2021-02-10 06:20:50 error: *** Unit Test Error Report ***
+
+
+
+2021-02-10 06:22:38 info: Disclaimer turned off
+2021-02-10 06:27:32 info: ----------------------------------------------
+2021-02-10 06:27:32 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-02-10 06:27:32 info: ----------------------------------------------
+2021-02-10 06:27:54 info: All unit tests passed.
+2021-02-10 06:28:05 info: All steps were completed successfully
