@@ -11,3 +11,34 @@
 2021-02-10 06:27:32 info: ----------------------------------------------
 2021-02-10 06:27:54 info: All unit tests passed.
 2021-02-10 06:28:05 info: All steps were completed successfully
+2021-02-10 07:21:59 info: ----------------------------------------
+2021-02-10 07:21:59 info: >>> Running Unit Test `ex2-dogYears` <<<
+2021-02-10 07:21:59 info: ----------------------------------------
+2021-02-10 07:22:17 info: All unit tests passed.
+2021-02-10 07:22:31 info: All steps were completed successfully
+2021-02-11 10:24:25 info: -------------------------------------------
+2021-02-11 10:24:25 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-02-11 10:24:25 info: -------------------------------------------
+2021-02-11 10:25:14 info: All unit tests passed.
+2021-02-11 10:25:37 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:43:4 - Unknown word (Scarlett)
+ex3-tellFortune.js:51:8 - Unknown word (Haag)
+
+2021-02-11 11:07:31 info: -------------------------------------------
+2021-02-11 11:07:31 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-02-11 11:07:31 info: -------------------------------------------
+2021-02-11 11:08:29 error: *** Unit Test Error Report ***
+
+
+
+2021-02-11 11:09:26 info: -------------------------------------------
+2021-02-11 11:09:26 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-02-11 11:09:26 info: -------------------------------------------
+2021-02-11 11:09:53 info: All unit tests passed.
+2021-02-11 11:10:05 info: All steps were completed successfully
+2021-02-11 11:44:24 info: --------------------------------------------
+2021-02-11 11:44:24 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-02-11 11:44:24 info: --------------------------------------------
+2021-02-11 11:44:44 info: All unit tests passed.
+2021-02-11 11:44:57 info: All steps were completed successfully
