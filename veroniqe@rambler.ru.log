@@ -42,3 +42,8 @@ ex3-tellFortune.js:51:8 - Unknown word (Haag)
 2021-02-11 11:44:24 info: --------------------------------------------
 2021-02-11 11:44:44 info: All unit tests passed.
 2021-02-11 11:44:57 info: All steps were completed successfully
+2021-02-12 12:06:22 info: -------------------------------------------------
+2021-02-12 12:06:22 info: >>> Running Unit Test `ex5-shoppingCartRedux` <<<
+2021-02-12 12:06:22 info: -------------------------------------------------
+2021-02-12 12:06:43 info: All unit tests passed.
+2021-02-12 12:06:55 info: All steps were completed successfully
