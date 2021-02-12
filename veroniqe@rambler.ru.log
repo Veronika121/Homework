@@ -62,3 +62,8 @@ ex3-tellFortune.js:51:8 - Unknown word (Haag)
 2021-02-12 12:33:02 info: -----------------------------------------
 2021-02-12 12:33:19 info: All unit tests passed.
 2021-02-12 12:33:31 info: All steps were completed successfully
+2021-02-12 11:29:19 info: -------------------------------------------
+2021-02-12 11:29:19 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2021-02-12 11:29:19 info: -------------------------------------------
+2021-02-12 11:29:37 info: All unit tests passed.
+2021-02-12 11:29:49 info: All steps were completed successfully
