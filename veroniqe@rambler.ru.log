@@ -47,3 +47,18 @@ ex3-tellFortune.js:51:8 - Unknown word (Haag)
 2021-02-12 12:06:22 info: -------------------------------------------------
 2021-02-12 12:06:43 info: All unit tests passed.
 2021-02-12 12:06:55 info: All steps were completed successfully
+2021-02-12 12:29:45 info: -----------------------------------------
+2021-02-12 12:29:45 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-02-12 12:29:45 info: -----------------------------------------
+2021-02-12 12:30:04 error: *** Unit Test Error Report ***
+
+- calculateTotalPrice cartForParty should contain five grocery items with prices
+- calculateTotalPrice should return the total price in Euros
+  Expected: Total: €12.00
+  Received: Total: €12
+
+2021-02-12 12:33:02 info: -----------------------------------------
+2021-02-12 12:33:02 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-02-12 12:33:02 info: -----------------------------------------
+2021-02-12 12:33:19 info: All unit tests passed.
+2021-02-12 12:33:31 info: All steps were completed successfully
