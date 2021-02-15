@@ -67,3 +67,15 @@ ex3-tellFortune.js:51:8 - Unknown word (Haag)
 2021-02-12 11:29:19 info: -------------------------------------------
 2021-02-12 11:29:37 info: All unit tests passed.
 2021-02-12 11:29:49 info: All steps were completed successfully
+2021-02-15 12:27:15 info: -----------------------------------------
+2021-02-15 12:27:15 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-02-15 12:27:15 info: -----------------------------------------
+2021-02-15 12:27:55 error: *** Unit Test Error Report ***
+
+
+
+2021-02-15 12:28:33 info: -----------------------------------------
+2021-02-15 12:28:33 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-02-15 12:28:33 info: -----------------------------------------
+2021-02-15 12:28:57 info: All unit tests passed.
+2021-02-15 12:29:09 info: All steps were completed successfully

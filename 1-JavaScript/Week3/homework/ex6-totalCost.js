@@ -22,9 +22,9 @@ instead!
 const cartForParty = {
   beers: 1.1,
   chips: 2.9,
-  cola: 2.41,
+  cola: 2.3,
   olives: 2.7,
-  bacon: 2, //11.11
+  bacon: 2, //11.00
 };
 
 function calculateTotalPrice(cart) {
@@ -32,6 +32,7 @@ function calculateTotalPrice(cart) {
   for (const key in cart) {
     totalPrice = totalPrice + cart[key];
   }
+  totalPrice = totalPrice.toFixed(2);
   return `Total: €${totalPrice}`;
 }
 console.log(calculateTotalPrice(cartForParty));
