@@ -29,16 +29,26 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
+function computeEarnings(arr, rate) {
   // TODO complete this function
+  function cost(obj) {
+    return (obj.duration / 60) * rate;
+  }
+  const newArr = arr.map(cost);
+
+  function sum(accum, value) {
+    return accum + value;
+  }
+  const total = newArr.reduce(sum);
+  return '€' + total.toFixed(2);
 }
 
 // example use case 1
-const earnings = computeEarnings(mondayTasks, hourlyRate);
+let earnings = computeEarnings(mondayTasks, hourlyRate);
 console.log(`Total earnings: ${earnings}`); // -> "Total earnings: €187.5"
 
 // example use case 2
-const earnings = computeEarnings(
+earnings = computeEarnings(
   [
     {
       name: 'walked 3 dogs',

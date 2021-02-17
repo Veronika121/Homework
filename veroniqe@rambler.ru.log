@@ -3,3 +3,17 @@
 2021-02-17 04:11:42 info: -------------------------------------------------
 2021-02-17 04:12:29 info: All unit tests passed.
 2021-02-17 04:12:52 info: All steps were completed successfully
+2021-02-17 04:50:11 info: --------------------------------------------
+2021-02-17 04:50:11 info: >>> Running Unit Test `ex2-mondaysWorth` <<<
+2021-02-17 04:50:11 info: --------------------------------------------
+2021-02-17 04:50:28 error: *** Unit Test Error Report ***
+
+- mondaysWorth should compute the earnings as a formatted Euro amount
+  Expected: €187.50
+  Received: €187.5
+
+2021-02-17 04:51:54 info: --------------------------------------------
+2021-02-17 04:51:54 info: >>> Running Unit Test `ex2-mondaysWorth` <<<
+2021-02-17 04:51:54 info: --------------------------------------------
+2021-02-17 04:52:09 info: All unit tests passed.
+2021-02-17 04:52:21 info: All steps were completed successfully
