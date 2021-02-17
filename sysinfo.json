@@ -1,0 +1,66 @@
+{
+  "node": "v14.15.4",
+  "system": {
+    "manufacturer": "Acer",
+    "model": "Aspire ES1-331"
+  },
+  "cpu": {
+    "manufacturer": "Intel®",
+    "brand": "Pentium® N3700",
+    "speed": 1.6
+  },
+  "memory": "8 GB",
+  "osInfo": {
+    "platform": "win32",
+    "distro": "�������� Windows 10 ������� ��� ������ �몠",
+    "release": "10.0.18363"
+  },
+  "blockDevices": [
+    {
+      "name": "C:",
+      "size": "499 GB",
+      "fsType": "ntfs",
+      "physical": "Local"
+    }
+  ],
+  "vscodeInfo": {
+    "version": "1.53.2",
+    "extensions": [
+      "aaron-bond.better-comments",
+      "bierner.github-markdown-preview",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "bierner.markdown-preview-github-styles",
+      "bierner.markdown-yaml-preamble",
+      "CoenraadS.bracket-pair-colorizer",
+      "CoenraadS.bracket-pair-colorizer-2",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "evgeniypeshkov.syntax-highlighter",
+      "formulahendry.code-runner",
+      "hdg.live-html-previewer",
+      "ritwickdey.LiveServer",
+      "streetsidesoftware.code-spell-checker",
+      "techer.open-in-browser"
+    ],
+    "userSettings": {
+      "editor.detectIndentation": false,
+      "editor.formatOnSave": true,
+      "editor.minimap.enabled": false,
+      "editor.renderIndentGuides": true,
+      "editor.tabSize": 2,
+      "editor.codeActionsOnSave": {
+        "source.fixAll": true
+      },
+      "eslint.autoFixOnSave": true,
+      "files.autoSave": "onFocusChange",
+      "prettier.singleQuote": true,
+      "prettier.trailingComma": "all",
+      "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "workbench.colorTheme": "Visual Studio Light",
+      "window.zoomLevel": 1
+    }
+  }
+}
