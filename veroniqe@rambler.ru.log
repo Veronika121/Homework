@@ -27,3 +27,8 @@
 2021-02-18 02:32:38 info: --------------------------------------------
 2021-02-18 02:32:55 info: All unit tests passed.
 2021-02-18 02:33:06 info: All steps were completed successfully
+2021-02-18 04:20:13 info: ------------------------------------------------
+2021-02-18 04:20:13 info: >>> Running Unit Test `ex4-publishSubscribe` <<<
+2021-02-18 04:20:13 info: ------------------------------------------------
+2021-02-18 04:20:29 info: All unit tests passed.
+2021-02-18 04:20:41 info: All steps were completed successfully
