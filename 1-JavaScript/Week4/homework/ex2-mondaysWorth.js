@@ -31,16 +31,28 @@ const hourlyRate = 25;
 
 function computeEarnings(arr, rate) {
   // TODO complete this function
-  function cost(obj) {
-    return (obj.duration / 60) * rate;
-  }
-  const newArr = arr.map(cost);
+  /*Make sure we use the function computeEarnings on the array (or the object) of objects and there is
+  at least one `duration` property with a number value.*/
+  if (
+    (typeof arr === 'object') &
+    arr.every((val) => typeof val === 'object') &
+    arr.some((val) => {
+      return typeof val.duration === 'number';
+    })
+  ) {
+    const cost = function (obj) {
+      if (typeof obj.duration === 'number') {
+        return (obj.duration / 60) * rate;
+      } else return 0;
+    };
+    const newArr = arr.map(cost); //array with costs of tasks
 
-  function sum(accum, value) {
-    return accum + value;
+    const sum = function (accum, value) {
+      return accum + value;
+    };
+    const total = newArr.reduce(sum); //total cost
+    return '€' + total.toFixed(2);
   }
-  const total = newArr.reduce(sum);
-  return '€' + total.toFixed(2);
 }
 
 // example use case 1
