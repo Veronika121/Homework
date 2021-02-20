@@ -103,3 +103,9 @@ ex3-tellFortune.js:51:8 - Unknown word (Haag)
 2021-02-20 09:23:25 error: *** Unit Test Error Report ***
 
 
+2021-02-20 09:34:29 info: ----------------------------------------------
+2021-02-20 09:34:29 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-02-20 09:34:29 info: ----------------------------------------------
+2021-02-20 09:34:33 error: *** Unit Test Error Report ***
+
+
