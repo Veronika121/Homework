@@ -24,7 +24,6 @@ const fruitBasket = [
 ];
 
 function sanitizeFruitBasket(arr, fruit) {
-  // TODO complete this function
   function goodFruits(str) {
     return str !== fruit;
   }

@@ -9,7 +9,6 @@ Let's rewrite it (or _refactor_ it, as professional developers would call it):
 `doubleEvenNumbers`.
 ------------------------------------------------------------------------------*/
 function doubleEvenNumbers(numbers) {
-  // TODO rewrite the function body using `map` and `filter`.
   let newNumbers = [];
   function isEven(num) {
     return num % 2 === 0;

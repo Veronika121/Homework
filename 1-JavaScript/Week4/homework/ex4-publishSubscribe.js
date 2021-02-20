@@ -41,11 +41,9 @@ function createPublisher() {
   const listeners = [];
   return {
     subscribe: function (func) {
-      // TODO complete this function
       listeners.push(func);
     },
     notify: function (mes) {
-      // TODO complete this function
       for (const item of listeners) {
         item(mes);
       }

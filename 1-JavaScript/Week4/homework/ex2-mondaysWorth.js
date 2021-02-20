@@ -30,7 +30,6 @@ const mondayTasks = [
 const hourlyRate = 25;
 
 function computeEarnings(arr, rate) {
-  // TODO complete this function
   /*Make sure we use the function computeEarnings on the array (or the object) of objects and there is
   at least one `duration` property with a number value.*/
   if (
