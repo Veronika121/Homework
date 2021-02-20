@@ -37,3 +37,8 @@
 2021-02-20 12:10:21 info: --------------------------------------
 2021-02-20 12:11:10 info: All unit tests passed.
 2021-02-20 12:11:33 info: All steps were completed successfully
+2021-02-20 09:31:33 info: -------------------------------------------------
+2021-02-20 09:31:33 info: >>> Running Unit Test `ex1-doubleEvenNumbers` <<<
+2021-02-20 09:31:33 info: -------------------------------------------------
+2021-02-20 09:32:06 info: All unit tests passed.
+2021-02-20 09:32:18 info: All steps were completed successfully
