@@ -109,3 +109,18 @@ ex3-tellFortune.js:51:8 - Unknown word (Haag)
 2021-02-20 09:34:33 error: *** Unit Test Error Report ***
 
 
+2021-02-20 10:03:21 info: ----------------------------------------
+2021-02-20 10:03:21 info: >>> Running Unit Test `ex2-dogYears` <<<
+2021-02-20 10:03:21 info: ----------------------------------------
+2021-02-20 10:03:38 info: All unit tests passed.
+2021-02-20 10:03:51 info: All steps were completed successfully
+2021-02-20 10:09:57 info: -------------------------------------------------
+2021-02-20 10:09:57 info: >>> Running Unit Test `ex5-shoppingCartRedux` <<<
+2021-02-20 10:09:57 info: -------------------------------------------------
+2021-02-20 10:10:17 info: All unit tests passed.
+2021-02-20 10:10:30 info: All steps were completed successfully
+2021-02-22 03:48:40 info: -----------------------------------------
+2021-02-22 03:48:40 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-02-22 03:48:40 info: -----------------------------------------
+2021-02-22 03:49:37 info: All unit tests passed.
+2021-02-22 03:50:11 info: All steps were completed successfully

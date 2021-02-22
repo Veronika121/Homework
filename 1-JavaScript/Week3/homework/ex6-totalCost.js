@@ -28,13 +28,11 @@ const cartForParty = {
 };
 
 function calculateTotalPrice(cart) {
-  let totalPrice = 0;
-  for (const key in cart) {
-    totalPrice = totalPrice + cart[key];
-  }
-  totalPrice = totalPrice.toFixed(2);
+  const total = Object.keys(cart).reduce((acc, elem) => acc + cart[elem], 0);
+  const totalPrice = total.toFixed(2);
   return `Total: €${totalPrice}`;
 }
+
 console.log(calculateTotalPrice(cartForParty));
 
 // this is one example, you will need to write a different object

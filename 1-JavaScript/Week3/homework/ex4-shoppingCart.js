@@ -22,7 +22,6 @@ you have more than 3 items in your shopping cart the first item gets taken out.
 const shoppingCart = ['bananas', 'milk'];
 
 function addToShoppingCart(groceryItem) {
-  // TODO complete this function
   if (shoppingCart.length < 3) {
     shoppingCart.push(groceryItem);
   } else {
