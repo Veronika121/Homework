@@ -35,3 +35,8 @@ ex1-bookList/index.js
 
 - Generated HTML should include an <li> with title and author for each book
 
+2021-02-25 05:31:34 info: ---------------------------------------
+2021-02-25 05:31:34 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-02-25 05:31:34 info: ---------------------------------------
+2021-02-25 05:32:23 info: All unit tests passed.
+2021-02-25 05:32:43 info: All steps were completed successfully
