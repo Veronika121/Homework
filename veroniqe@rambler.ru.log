@@ -40,3 +40,11 @@ ex1-bookList/index.js
 2021-02-25 05:31:34 info: ---------------------------------------
 2021-02-25 05:32:23 info: All unit tests passed.
 2021-02-25 05:32:43 info: All steps were completed successfully
+2021-02-25 05:58:04 info: ------------------------------------------
+2021-02-25 05:58:04 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2021-02-25 05:58:04 info: ------------------------------------------
+2021-02-25 05:58:20 info: All unit tests passed.
+2021-02-25 05:58:33 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:9:46 - Unknown word (Xdpd)
+
