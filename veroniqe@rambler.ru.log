@@ -48,3 +48,8 @@ ex1-bookList/index.js
 
 ex3-hijackLogo.js:9:46 - Unknown word (Xdpd)
 
+2021-02-25 09:04:10 info: --------------------------------------------
+2021-02-25 09:04:10 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-02-25 09:04:10 info: --------------------------------------------
+2021-02-25 09:04:57 info: All unit tests passed.
+2021-02-25 09:05:16 info: All steps were completed successfully

@@ -9,7 +9,6 @@ function hijackGoogleLogo() {
   const oldLogo = document.querySelector('.lnXdpd');
   oldLogo.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
   oldLogo.srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
-  console.log(oldLogo);
 }
 
 hijackGoogleLogo();
