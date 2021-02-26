@@ -12,7 +12,7 @@ function addCurrentTime() {
     }
     return value;
   }
-  setInterval(() => {
+  window.setInterval(() => {
     const date = new Date();
     const hours = zeroFormat(date.getHours());
     const minutes = zeroFormat(date.getMinutes());
