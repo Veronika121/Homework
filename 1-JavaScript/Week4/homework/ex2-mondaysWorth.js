@@ -31,25 +31,29 @@ const hourlyRate = 25;
 
 function computeEarnings(arr, rate) {
   /*Make sure we use the function computeEarnings on the array (or the object) of objects and there is
-  at least one `duration` property with a number value.*/
+  at least one `duration` property with a number value.
+  In the if statement above I checked if the array has objects and there is
+  at least one `duration` property with a number value. And here I check if the current property `duration`
+  has a number value. 
+  Because it may happen that in an array one object has a property `duration` with a number value, 
+  and another object has a property `duration` with a not-number value. 
+  Then the check above will be passed successfully, and this check will be not passed.
+  
+  */
   if (
-    (typeof arr === 'object') &
-    arr.every((val) => typeof val === 'object') &
+    typeof arr === 'object' &&
+    arr.every((val) => typeof val === 'object') &&
     arr.some((val) => {
       return typeof val.duration === 'number';
     })
   ) {
-    const cost = function (obj) {
+    const newArr = arr.map((obj) => {
       if (typeof obj.duration === 'number') {
         return (obj.duration / 60) * rate;
       } else return 0;
-    };
-    const newArr = arr.map(cost); //array with costs of tasks
+    }); //array with costs of tasks
 
-    const sum = function (accum, value) {
-      return accum + value;
-    };
-    const total = newArr.reduce(sum); //total cost
+    const total = newArr.reduce((accum, value) => accum + value); //total cost
     return '€' + total.toFixed(2);
   }
 }

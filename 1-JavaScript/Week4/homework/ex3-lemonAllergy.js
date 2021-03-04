@@ -24,10 +24,7 @@ const fruitBasket = [
 ];
 
 function sanitizeFruitBasket(arr, fruit) {
-  function goodFruits(str) {
-    return str !== fruit;
-  }
-  const newArr = arr.filter(goodFruits);
+  const newArr = arr.filter((str) => str !== fruit);
   return (
     'My mom bought me a fruit basket containing ' + newArr.join(', ') + '!'
   );
