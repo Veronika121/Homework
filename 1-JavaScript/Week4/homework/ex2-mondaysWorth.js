@@ -29,16 +29,41 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(arr, rate) {
+  /*Make sure we use the function computeEarnings on the array (or the object) of objects and there is
+  at least one `duration` property with a number value.
+  In the if statement above I checked if the array has objects and there is
+  at least one `duration` property with a number value. And here I check if the current property `duration`
+  has a number value. 
+  Because it may happen that in an array one object has a property `duration` with a number value, 
+  and another object has a property `duration` with a not-number value. 
+  Then the check above will be passed successfully, and this check will be not passed.
+  
+  */
+  if (
+    typeof arr === 'object' &&
+    arr.every((val) => typeof val === 'object') &&
+    arr.some((val) => {
+      return typeof val.duration === 'number';
+    })
+  ) {
+    const newArr = arr.map((obj) => {
+      if (typeof obj.duration === 'number') {
+        return (obj.duration / 60) * rate;
+      } else return 0;
+    }); //array with costs of tasks
+
+    const total = newArr.reduce((accum, value) => accum + value); //total cost
+    return '€' + total.toFixed(2);
+  }
 }
 
 // example use case 1
-const earnings = computeEarnings(mondayTasks, hourlyRate);
+let earnings = computeEarnings(mondayTasks, hourlyRate);
 console.log(`Total earnings: ${earnings}`); // -> "Total earnings: €187.5"
 
 // example use case 2
-const earnings = computeEarnings(
+earnings = computeEarnings(
   [
     {
       name: 'walked 3 dogs',
