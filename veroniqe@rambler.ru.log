@@ -1,0 +1,62 @@
+2021-02-25 04:43:51 info: ----------------------------------------
+2021-02-25 04:43:51 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-02-25 04:43:51 info: ----------------------------------------
+2021-02-25 04:44:56 error: *** Unit Test Error Report ***
+
+- Generated HTML should include an <li> with title and author for each book
+
+2021-02-25 04:48:14 info: ----------------------------------------
+2021-02-25 04:48:14 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-02-25 04:48:14 info: ----------------------------------------
+2021-02-25 04:48:38 error: *** Unit Test Error Report ***
+
+- Generated HTML HTML should be syntactically valid
+  inline
+    10:71   error  <img> is missing required "alt" attribute  wcag/h37
+    10:172  error  <img> is missing required "alt" attribute  wcag/h37
+    10:264  error  <img> is missing required "alt" attribute  wcag/h37
+  
+  ✖ 3 problems (3 errors, 0 warnings)
+  
+- Generated HTML should include an <li> with title and author for each book
+
+2021-02-25 04:48:43 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  37:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-02-25 04:53:33 info: ----------------------------------------
+2021-02-25 04:53:33 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-02-25 04:53:33 info: ----------------------------------------
+2021-02-25 04:53:57 error: *** Unit Test Error Report ***
+
+- Generated HTML should include an <li> with title and author for each book
+
+2021-02-25 05:31:34 info: ---------------------------------------
+2021-02-25 05:31:34 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-02-25 05:31:34 info: ---------------------------------------
+2021-02-25 05:32:23 info: All unit tests passed.
+2021-02-25 05:32:43 info: All steps were completed successfully
+2021-02-25 05:58:04 info: ------------------------------------------
+2021-02-25 05:58:04 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2021-02-25 05:58:04 info: ------------------------------------------
+2021-02-25 05:58:20 info: All unit tests passed.
+2021-02-25 05:58:33 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:9:46 - Unknown word (Xdpd)
+
+2021-02-25 09:04:10 info: --------------------------------------------
+2021-02-25 09:04:10 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-02-25 09:04:10 info: --------------------------------------------
+2021-02-25 09:04:57 info: All unit tests passed.
+2021-02-25 09:05:16 info: All steps were completed successfully
+2021-02-26 07:40:22 info: ---------------------------------------
+2021-02-26 07:40:22 info: >>> Running Unit Test `ex5-catWalk` <<<
+2021-02-26 07:40:22 info: ---------------------------------------
+2021-02-26 07:41:21 error: *** Unit Test Error Report ***
+
+- catWalk should use `setInterval()`
+
