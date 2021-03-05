@@ -11,21 +11,15 @@
 document.body.style.fontFamily = 'Arial, sans-serif';
 
 const nickname = document.getElementById('nickname');
-const parentNickname = nickname.parentElement;
-const newName = document.createTextNode('Veronika');
-parentNickname.replaceChild(newName, nickname);
+nickname.innerText = 'Veronika';
 
 const favFood = document.getElementById('fav-food');
-const parentFavFood = favFood.parentElement;
-const newFood = document.createTextNode('Sushi');
-parentFavFood.replaceChild(newFood, favFood);
+favFood.innerText = 'Sushi';
 
 const hometown = document.getElementById('hometown');
-const parentHometown = hometown.parentElement;
-const newTown = document.createTextNode('Moscow');
-parentHometown.replaceChild(newTown, hometown);
+hometown.innerText = 'Moscow';
 
-const lis = document.getElementsByTagName('li');
-for (let i = 0; i < lis.length; i++) {
-  lis[i].className = 'list-item';
+const list = document.getElementsByTagName('li');
+for (let i = 0; i < list.length; i++) {
+  list[i].className = 'list-item';
 }

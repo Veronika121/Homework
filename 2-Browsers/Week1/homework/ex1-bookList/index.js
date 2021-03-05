@@ -17,37 +17,6 @@
 
 */
 //cspell: enable
-
-function createBookList(books) {
-  const ul = document.createElement('ul');
-  for (const item of books) {
-    const newPar = document.createElement('p');
-    newPar.innerText = `${item.title} - ${item.author}`;
-    const li = document.createElement('li');
-    li.appendChild(newPar);
-
-    const img = document.createElement('img');
-    if (item.title === 'The Design of Everyday Things') {
-      img.src = 'assets/the_design_of_everyday_things.jpg';
-    } else if (item.title === 'The Most Human Human') {
-      img.src = 'assets/the_most_human_human.jpg';
-    } else if (item.title === 'The Pragmatic Programmer') {
-      img.src = 'assets/the_pragmatic_programmer.jpg';
-    }
-    img.alt = item.title;
-    li.appendChild(img);
-
-    if (item.alreadyRead === false) {
-      li.style.backgroundColor = 'red';
-    } else {
-      li.style.backgroundColor = 'green';
-    }
-
-    ul.appendChild(li);
-  }
-  return ul;
-}
-
 const myBooks = [
   {
     title: 'The Design of Everyday Things',
@@ -65,6 +34,40 @@ const myBooks = [
     alreadyRead: true,
   },
 ];
+
+for (const item of myBooks) {
+  if (item.title === 'The Design of Everyday Things') {
+    item.src = 'assets/the_design_of_everyday_things.jpg';
+  } else if (item.title === 'The Most Human Human') {
+    item.src = 'assets/the_most_human_human.jpg';
+  } else if (item.title === 'The Pragmatic Programmer') {
+    item.src = 'assets/the_pragmatic_programmer.jpg';
+  }
+}
+
+function createBookList(books) {
+  const ul = document.createElement('ul');
+  for (const item of books) {
+    const newPar = document.createElement('p');
+    newPar.innerText = `${item.title} - ${item.author}`;
+    const li = document.createElement('li');
+    li.appendChild(newPar);
+
+    const img = document.createElement('img');
+    img.src = item.src;
+    img.alt = item.title;
+    li.appendChild(img);
+
+    if (item.alreadyRead === false) {
+      li.style.backgroundColor = 'red';
+    } else {
+      li.style.backgroundColor = 'green';
+    }
+
+    ul.appendChild(li);
+  }
+  return ul;
+}
 
 const ulElement = createBookList(myBooks);
 
