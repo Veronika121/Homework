@@ -1,0 +1,29 @@
+2021-03-19 01:33:45 info: ---------------------------------------
+2021-03-19 01:33:45 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-03-19 01:33:45 info: ---------------------------------------
+2021-03-19 01:34:42 error: *** Unit Test Error Report ***
+
+- getAnonName should return a resolved promise when called with a string argument
+  Expected: John Doe
+  Received: John
+
+2021-03-19 01:36:22 info: ---------------------------------------
+2021-03-19 01:36:22 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-03-19 01:36:22 info: ---------------------------------------
+2021-03-19 01:36:40 info: All unit tests passed.
+2021-03-19 01:36:52 info: All steps were completed successfully
+2021-03-19 02:47:53 info: -------------------------------------------------
+2021-03-19 02:47:53 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2021-03-19 02:47:53 info: -------------------------------------------------
+2021-03-19 02:48:58 info: All unit tests passed.
+2021-03-19 02:49:18 info: All steps were completed successfully
+2021-03-19 06:36:05 info: ----------------------------------------
+2021-03-19 06:36:05 info: >>> Running Unit Test `ex3-rollDice` <<<
+2021-03-19 06:36:05 info: ----------------------------------------
+2021-03-19 06:36:23 info: All unit tests passed.
+2021-03-19 06:36:38 info: All steps were completed successfully
+2021-03-19 07:37:15 info: ----------------------------------------
+2021-03-19 07:37:15 info: >>> Running Unit Test `ex3-rollDice` <<<
+2021-03-19 07:37:15 info: ----------------------------------------
+2021-03-19 07:37:31 info: All unit tests passed.
+2021-03-19 07:37:44 info: All steps were completed successfully
