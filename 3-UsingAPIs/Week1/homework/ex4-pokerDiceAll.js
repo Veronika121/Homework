@@ -20,12 +20,21 @@ const rollDice = require('../../helpers/pokerDiceRoller');
 function rollTheDices() {
   // TODO Refactor this function
   const dices = [1, 2, 3, 4, 5];
-  return rollDice(1);
+  const resultPromises = [];
+  dices.forEach((dice) => {
+    resultPromises.push(rollDice(dice));
+  });
+  return resultPromises;
 }
 
-rollTheDices()
+Promise.all(rollTheDices())
   .then((results) => console.log('Resolved!', results))
   .catch((error) => console.log('Rejected!', error.message));
 
+//1. Dices that have not yet finished their roll continue to do so because  reject() doesn't mean 'return'.
+//2. There only a single call to either .then() or .catch() despite resolve() and/or reject() being called more than once
+//because .then() or .catch() can be called only ones. But I'm not sure :)
+//3. We get "Rejected! Dice ... rolled off the table." only once even if several dices rolled off the table
+//because if one of the promises is rejected the promise returned by Promise.all() is rejected.
 // ! Do not change or remove the code below
 module.export = rollTheDices;

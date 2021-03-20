@@ -21,25 +21,14 @@ function rollDice() {
       console.log(`Dice value is now: ${value}`);
 
       if (roll > 6) {
-        reject('Oops... Dice rolled off the table.');
-      } else if (roll < randomRollsToDo) {
-        setTimeout(() => rollOnce(roll + 1), 500);
-      } else {
-        resolve(`Success! Dice settled on ${value}.`);
-      }
-      /* Or like this. I don't know what is better.
-       
-      if (roll > 6) {
         reject(new Error('Oops... Dice rolled off the table.'));
-        return;
       }
       if (roll === randomRollsToDo) {
         resolve(`Success! Dice settled on ${value}.`);
-        return;
       }
       if (roll < randomRollsToDo) {
         setTimeout(() => rollOnce(roll + 1), 500);
-      }*/
+      }
     };
     // Start the initial roll
     rollOnce(1);
@@ -51,8 +40,7 @@ rollDice()
   .then((resolveValue) => console.log(resolveValue))
   .catch((rejectValue) => console.log(rejectValue.message));
 
+// It looks like the promise gives the value (reject or resolve) immediately after
+// the first case (rejection or resolving) happen and doesn't change this value anymore.
 // ! Do not change or remove the code below
 module.exports = rollDice;
-
-//Explanation: it doesn't occur because now we call rollOnce(roll + 1) only if roll<=6
-//Actually it was possible to fix it in the code with callback if to change if-statements.

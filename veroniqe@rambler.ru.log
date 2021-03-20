@@ -27,3 +27,30 @@
 2021-03-19 07:37:15 info: ----------------------------------------
 2021-03-19 07:37:31 info: All unit tests passed.
 2021-03-19 07:37:44 info: All steps were completed successfully
+2021-03-20 02:01:16 info: ----------------------------------------
+2021-03-20 02:01:16 info: >>> Running Unit Test `ex3-rollDice` <<<
+2021-03-20 02:01:16 info: ----------------------------------------
+2021-03-20 02:01:51 info: All unit tests passed.
+2021-03-20 02:01:57 error: *** ESLint Report ***
+
+ex3-rollDice.js
+  15:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-03-20 02:03:47 info: ----------------------------------------
+2021-03-20 02:03:47 info: >>> Running Unit Test `ex3-rollDice` <<<
+2021-03-20 02:03:47 info: ----------------------------------------
+2021-03-20 02:04:03 info: All unit tests passed.
+2021-03-20 02:04:17 info: All steps were completed successfully
+2021-03-20 02:06:17 info: ----------------------------------------
+2021-03-20 02:06:17 info: >>> Running Unit Test `ex3-rollDice` <<<
+2021-03-20 02:06:17 info: ----------------------------------------
+2021-03-20 02:06:33 info: All unit tests passed.
+2021-03-20 02:06:54 info: All steps were completed successfully
+2021-03-20 03:55:45 info: --------------------------------------------
+2021-03-20 03:55:45 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2021-03-20 03:55:45 info: --------------------------------------------
+2021-03-20 03:56:02 info: All unit tests passed.
+2021-03-20 03:56:15 info: All steps were completed successfully
