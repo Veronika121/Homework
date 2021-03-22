@@ -54,3 +54,8 @@ ex3-rollDice.js
 2021-03-20 03:55:45 info: --------------------------------------------
 2021-03-20 03:56:02 info: All unit tests passed.
 2021-03-20 03:56:15 info: All steps were completed successfully
+2021-03-22 02:12:27 info: ---------------------------------------------
+2021-03-22 02:12:27 info: >>> Running Unit Test `ex5-rollDiceChain` <<<
+2021-03-22 02:12:27 info: ---------------------------------------------
+2021-03-22 02:12:27 warn: A unit test file was not provided.
+2021-03-22 02:12:46 info: All steps were completed successfully
