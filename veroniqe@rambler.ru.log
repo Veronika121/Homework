@@ -59,3 +59,8 @@ ex3-rollDice.js
 2021-03-22 02:12:27 info: ---------------------------------------------
 2021-03-22 02:12:27 warn: A unit test file was not provided.
 2021-03-22 02:12:46 info: All steps were completed successfully
+2021-03-25 04:14:43 info: --------------------------------------------
+2021-03-25 04:14:43 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2021-03-25 04:14:43 info: --------------------------------------------
+2021-03-25 04:15:38 info: All unit tests passed.
+2021-03-25 04:15:56 info: All steps were completed successfully
