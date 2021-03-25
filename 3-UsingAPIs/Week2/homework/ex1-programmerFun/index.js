@@ -14,30 +14,47 @@
 6. Test error handling, for instance, by temporarily changing the `.sh` in the 
    url with `.shx`. There is no server at the modified url, therefore this 
    should result in a network (DNS) error.
+   .then(
+    (response) => {
+      if (response.ok) {
+        console.log('response:');
+        console.log(response);
+        const data = response.json();
+        console.log('получили данные из json1');
+        console.log(data);
+        return response;
+      }
+      throw new Error('Request failed!');
+    },
+    (networkError) => console.log(networkError.message)
+  );
 ------------------------------------------------------------------------------*/
 function requestData(url) {
-  // TODO return a promise using `fetch()`
+  return fetch(url);
 }
 
 function renderImage(data) {
   // TODO render the image to the DOM
+  console.log('data:');
   console.log(data);
 }
 
 function renderError(error) {
   // TODO render the error to the DOM
+  console.log('error');
   console.log(error);
 }
 
 // TODO refactor with async/await and try/catch
-function main() {
-  requestData('https://xkcd.now.sh/?comic=latest')
-    .then((data) => {
-      renderImage(data);
-    })
-    .catch((error) => {
-      renderError(error);
-    });
+async function main() {
+  try {
+    const dataJson = await requestData('https://xkcd.now.sh/?comic=latest');
+    const data = await dataJson.json();
+    renderImage(data);
+  } catch (error) {
+    renderError(error);
+  }
 }
 
-window.addEventListener('load', main);
+//window.addEventListener('load', main);
+main();
