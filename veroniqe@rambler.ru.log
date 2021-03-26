@@ -18,3 +18,8 @@
 2021-03-26 09:24:20 info: ------------------------------------------
 2021-03-26 09:25:41 info: All unit tests passed.
 2021-03-26 09:26:05 info: All steps were completed successfully
+2021-03-26 10:14:41 info: ----------------------------------------
+2021-03-26 10:14:41 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-03-26 10:14:41 info: ----------------------------------------
+2021-03-26 10:14:59 info: All unit tests passed.
+2021-03-26 10:15:12 info: All steps were completed successfully
