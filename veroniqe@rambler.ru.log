@@ -1,0 +1,20 @@
+2021-03-25 05:55:30 info: ---------------------------------------
+2021-03-25 05:55:30 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-03-25 05:55:30 info: ---------------------------------------
+2021-03-25 05:55:30 info: Exercise has not yet been modified
+2021-03-25 05:56:10 error: *** Unit Test Error Report ***
+
+- Generated HTML - the body font-family should be `Arial, sans-serif`
+- Generated HTML - each <li> should have the CSS class `list-item`
+- Generated HTML - each <li> should rendered red
+
+2021-03-25 05:56:52 info: ---------------------------------------------
+2021-03-25 05:56:52 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2021-03-25 05:56:52 info: ---------------------------------------------
+2021-03-25 05:57:20 info: All unit tests passed.
+2021-03-25 05:57:32 info: All steps were completed successfully
+2021-03-26 09:24:20 info: ------------------------------------------
+2021-03-26 09:24:20 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-26 09:24:20 info: ------------------------------------------
+2021-03-26 09:25:41 info: All unit tests passed.
+2021-03-26 09:26:05 info: All steps were completed successfully
