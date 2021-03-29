@@ -24,7 +24,7 @@ function fetchData(url) {
     if (response.ok) {
       return response.json();
     }
-    console.log(new Error('Request failed'));
+    throw new Error('Request failed');
   });
 }
 
