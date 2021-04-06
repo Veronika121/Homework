@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Complete the four functions provided in the starter `index.js` file:
 
@@ -18,18 +19,68 @@ Complete the four functions provided in the starter `index.js` file:
 Try and avoid using global variables. Instead, use function parameters and 
 return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function fetchData(url) {
+  return fetch(url).then((response) => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Request failed');
+  });
+}
+function renderImg(src, target) {
+  const body = document.querySelector('body');
+  let img = body.querySelector('img');
+  if (!img) {
+    img = document.createElement('img');
+    body.appendChild(img);
+  }
+  img.src = src;
+  img.alt = target.value;
+}
+function fetchImage(target, listOfPokemons) {
+  const currentPokemon = listOfPokemons.find((el) => el.name === target.value);
+  let imgSrc = '';
+  fetchData(currentPokemon.url)
+    .then((data) => {
+      imgSrc = data.sprites.front_default;
+      renderImg(imgSrc, target);
+    })
+    .catch((error) => console.log(error));
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+const showListOfPokemons = (listOfPokemons, select) => {
+  listOfPokemons.forEach((pokemon) => {
+    const option = document.createElement('option');
+    option.textContent = pokemon.name;
+    select.appendChild(option);
+  });
+  select.addEventListener('change', (event) =>
+    fetchImage(event.target, listOfPokemons)
+  );
+};
+
+async function fetchAndPopulatePokemons() {
+  const body = document.querySelector('body');
+  const buttonGetPokemon = document.createElement('button');
+  buttonGetPokemon.textContent = 'Get Pokemon!';
+  body.appendChild(buttonGetPokemon);
+  const select = document.createElement('select');
+  body.appendChild(select);
+
+  buttonGetPokemon.addEventListener('click', async () => {
+    const data = await fetchData('https://pokeapi.co/api/v2/pokemon/');
+    const listOfPokemons = data.results;
+    showListOfPokemons(listOfPokemons, select);
+    buttonGetPokemon.disabled = true;
+  });
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function main() {
+  try {
+    fetchAndPopulatePokemons();
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function main() {
-  // TODO complete this function
-}
+window.addEventListener('load', main);
