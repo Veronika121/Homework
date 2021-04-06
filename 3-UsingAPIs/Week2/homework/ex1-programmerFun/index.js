@@ -28,18 +28,16 @@ function requestData(url) {
 function renderImage(data) {
   const imgUrl = data.img;
   const imgAlt = data.alt;
-  const body = document.querySelector('body');
   const img = document.createElement('img');
   img.setAttribute('src', imgUrl);
   img.setAttribute('alt', imgAlt);
-  body.appendChild(img);
+  document.body.appendChild(img);
 }
 
 function renderError(error) {
-  const body = document.querySelector('body');
   const h1 = document.createElement('h1');
   h1.textContent = error;
-  body.appendChild(h1);
+  document.body.appendChild(h1);
 }
 
 async function main() {

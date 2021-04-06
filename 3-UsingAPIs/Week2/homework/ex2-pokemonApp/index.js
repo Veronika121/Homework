@@ -27,56 +27,57 @@ function fetchData(url) {
     throw new Error('Request failed');
   });
 }
+function renderImg(src, target) {
+  const body = document.querySelector('body');
+  let img = body.querySelector('img');
+  if (!img) {
+    img = document.createElement('img');
+    body.appendChild(img);
+  }
+  img.src = src;
+  img.alt = target.value;
+}
+function fetchImage(target, listOfPokemons) {
+  const currentPokemon = listOfPokemons.find((el) => el.name === target.value);
+  let imgSrc = '';
+  fetchData(currentPokemon.url)
+    .then((data) => {
+      imgSrc = data.sprites.front_default;
+      renderImg(imgSrc, target);
+    })
+    .catch((error) => console.log(error));
+}
 
-function fetchAndPopulatePokemons(data) {
-  const listOfPokemons = data.results;
+const showListOfPokemons = (listOfPokemons, select) => {
+  listOfPokemons.forEach((pokemon) => {
+    const option = document.createElement('option');
+    option.textContent = pokemon.name;
+    select.appendChild(option);
+  });
+  select.addEventListener('change', (event) =>
+    fetchImage(event.target, listOfPokemons)
+  );
+};
+
+async function fetchAndPopulatePokemons() {
   const body = document.querySelector('body');
   const buttonGetPokemon = document.createElement('button');
   buttonGetPokemon.textContent = 'Get Pokemon!';
   body.appendChild(buttonGetPokemon);
   const select = document.createElement('select');
   body.appendChild(select);
-  const showListOfPokemons = () => {
-    listOfPokemons.forEach((pokemon) => {
-      const option = document.createElement('option');
-      option.textContent = pokemon.name;
-      select.appendChild(option);
-    });
-    select.addEventListener('change', (event) =>
-      fetchImage(event.target, listOfPokemons)
-    );
 
-    buttonGetPokemon.removeEventListener('click', showListOfPokemons);
-  };
-  buttonGetPokemon.addEventListener('click', showListOfPokemons);
-}
-
-function fetchImage(target, listOfPokemons) {
-  const currentPokemon = listOfPokemons.find((el) => el.name === target.value);
-
-  let imgSrc = '';
-  fetchData(currentPokemon.url)
-    .then((data) => {
-      imgSrc = data.sprites.front_default;
-      renderImg(imgSrc);
-    })
-    .catch((error) => console.log(error));
-  function renderImg(src) {
-    const body = document.querySelector('body');
-    let img = body.querySelector('img');
-    if (!img) {
-      img = document.createElement('img');
-      body.appendChild(img);
-    }
-    img.src = src;
-    img.alt = target.value;
-  }
+  buttonGetPokemon.addEventListener('click', async () => {
+    const data = await fetchData('https://pokeapi.co/api/v2/pokemon/');
+    const listOfPokemons = data.results;
+    showListOfPokemons(listOfPokemons, select);
+    buttonGetPokemon.disabled = true;
+  });
 }
 
 async function main() {
   try {
-    const response = await fetchData('https://pokeapi.co/api/v2/pokemon/');
-    fetchAndPopulatePokemons(response);
+    fetchAndPopulatePokemons();
   } catch (error) {
     console.log(error);
   }
